@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/jet-setter-react/precache-manifest.e750ebc4b7f654ccc70e54b0fa42e291.js"
+  "/jet-setter-react/precache-manifest.17d4aa69a9a3b062c4a40c8cbcfbc5da.js"
 );
 
 workbox.clientsClaim();
