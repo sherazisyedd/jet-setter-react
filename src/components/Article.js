@@ -3,14 +3,16 @@ import React from 'react';
 class Article extends React.Component {
 
     render() {
+        const { name, removeItem } = this.props;
+        
         return (
             <article className="item">
-                <label htmlFor={this.props.name} >
-                    <input type="checkbox" id={this.props.name} value="on" defaultChecked={this.props.checked}
+                <label htmlFor={name} >
+                    <input type="checkbox" id={name} value="on" defaultChecked={this.props.checked}
                         onClick={this.props.onClick} />
-                    {this.props.name}
+                    {name}
                 </label>
-                <button className="item-remove" onClick={this.props.removeItem}>Remove</button>
+                <button className="item-remove" onClick={removeItem}>Remove</button>
             </article>
         );
     }

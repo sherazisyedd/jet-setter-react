@@ -18,8 +18,8 @@ class Items extends React.Component {
             return (
                 <Article
                     name={item.title} key = {item.id} checked={this.props.packed ? true : false}
-                    onClick={() => this.props.onClick(item.id)}
-                    removeItem={() => this.props.removeItem(item.id)}>
+                    onClick={() => this.props.onClick(item)}
+                    removeItem={() => this.props.removeItem(item)}>
                 </Article>
             );
         });
